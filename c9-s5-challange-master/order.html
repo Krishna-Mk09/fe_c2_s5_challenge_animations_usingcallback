@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order App</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/order.css">
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">View Menu</a>
+        <a href="customer.html">Customer Registration</a>
+        <a href="order.html">Place an Order</a>
+    </div>
+
+    <!-- Paste the code developed in sprint 5 challenge to create order form here  -->
+
+    <div id="header"><h1>Pizza Order App</h1></div>
+
+    <form onsubmit="return saveData()" id="reg-form">
+        <div id="div1">
+        <h4>Fill Up Order Details Here</h4>
+         <div>
+            <label for="order">Order Id:</label>
+         
+            <input type="text" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="name">Customer Name:</label>
+            
+            <input type="text" required>
+            <br>
+            <br>        
+        </div>
+        <div>
+            <label for="email">Email ID:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="text" name="contact" id="contact" 
+            minlength="10" maxlength="10" pattern="[0-9]+" required>
+        </div>
+        <div>
+            <label for="date">Order Date:</label>
+            <br>
+            <br>
+            <input type="date">
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="email">Address:</label>
+            <br>
+            <br>
+            <input type="address" required name="address" minlength="10" id="" cols="30" rows="2"></input>
+        </div>
+        <div>
+            <label for="add">Add Order:</label>
+            <button style="border-radius: 50%;" onclick="orderCategory(event)">&#43;</button>
+        </div>
+    </div>
+        <br>
+        <input type="submit" value="Order Now" style="background-color:rgb(7, 7, 98) ; color: aqua;">
+   
+    </form>
+</body>
+</html>
